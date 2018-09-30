@@ -41,6 +41,10 @@ p, span {
   line-height: 1.45;
 }
 
+p:last-child {
+  margin-top: 1rem;
+}
+
 a, a:link, a:visited, a:active {
   color: rgba(249, 249, 249, .5);
   text-decoration: none;
