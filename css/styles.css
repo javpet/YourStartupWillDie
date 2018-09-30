@@ -27,11 +27,17 @@ h2 {
   font-size: 2.827rem;
 }
 
-h1, h2 {
+h3 {
+  font-size: 1.999rem;
+  line-height: 1.2;
+}
+
+h1, h2, h3 {
+  line-height: 1;
   margin-bottom: 16px;
 }
 
-p {
+p, span {
   line-height: 1.45;
 }
 
@@ -89,6 +95,22 @@ input[type="submit"] {
   width: 700px;
   max-width: 50%;
   text-align: center;
+  transition: all 300ms ease;
+}
+
+.sign_up__success {
+  margin-top: 2rem;
+}
+
+.sign_up__error {
+  color: #F26778;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+/* HELPER */
+.display_none {
+  display: none;
 }
 
 @media only screen and (max-width: 700px) {
