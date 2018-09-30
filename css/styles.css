@@ -68,6 +68,7 @@ input {
   outline: none;
   box-shadow: none;
   border-color: transparent;
+  border-radius: 0;
 }
 
 input::placeholder {
