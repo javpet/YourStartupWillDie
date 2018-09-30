@@ -11,9 +11,10 @@ function register($form) {
   $.ajax({
     type: $form.attr('method'),
     url: $form.attr('action'),
+    type: 'get',
     data: $form.serialize(),
     cache: false,
-    dataType: 'json',
+    dataType: 'jsonp',
     contentType: "application/json; charset=utf-8",
     error: function(err) {
       alert("Could not connect to the registration server. Please try again later.");
