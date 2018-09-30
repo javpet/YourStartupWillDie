@@ -41,8 +41,7 @@ p, span {
   line-height: 1.45;
 }
 
-a, a:visited, a:active {
-  -webkit-appearance: none;
+a, a:link, a:visited, a:active {
   color: rgb(249, 249, 249, .5);
   text-decoration: none;
   text-decoration-color: #f9f9f9;
@@ -100,6 +99,8 @@ input[type="email"] {
   width: 550px;
   max-width: 50%;
   margin-bottom: 1rem;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 input[type="submit"] {
@@ -107,7 +108,7 @@ input[type="submit"] {
   font-family: "IBM Plex Mono";
   font-size: 1rem;
   background-color: #f9f9f9;
-  width: 700px;
+  width: 550px;
   max-width: 50%;
   text-align: center;
   transition: all 300ms ease;
