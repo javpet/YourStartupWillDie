@@ -1,0 +1,122 @@
+:root {
+  color: #f9f9f9;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #111;
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  margin: 0 auto;
+  width: 100vw;
+  max-width: 900px;
+  height: 100%;
+  margin: 3rem;
+}
+
+h1 {
+  font-size: 3.998rem;
+}
+
+h2 {
+  font-size: 2.827rem;
+}
+
+h1, h2 {
+  margin-bottom: 16px;
+}
+
+p {
+  line-height: 1.45;
+}
+
+a {
+  color: rgb(249, 249, 249, .5);
+  text-decoration: none;
+  text-decoration-color: #f9f9f9;
+}
+
+section {
+  margin-bottom: 2rem;
+  padding: 3rem;
+  border-bottom: 32px solid transparent;
+  border-image: url("../img/skull_yourstartup.svg");
+  border-image-width: 1.5rem;
+  border-image-repeat: round;
+}
+
+form {
+  margin-top: 1.25rem;
+}
+
+input {
+  outline: none;
+  box-shadow: none;
+  border-color: transparent;
+}
+
+input::placeholder {
+  font-family: "IBM Plex Mono";
+  font-size: 1rem;
+  color: rgb(249, 249, 249, .5);
+}
+
+input[type="email"] {
+  display: block;
+  color: #f9f9f9;
+  font-family: "IBM Plex Mono";
+  font-size: 1rem;
+  padding-bottom: .5rem;
+  padding-top: .5rem;
+  background-color: transparent;
+  border: none;
+  border-bottom: 4px solid #f9f9f9;
+  width: 550px;
+  max-width: 50%;
+  margin-bottom: 1rem;
+}
+
+input[type="submit"] {
+  padding: 1rem;
+  font-family: "IBM Plex Mono";
+  font-size: 1rem;
+  background-color: #f9f9f9;
+  width: 700px;
+  max-width: 50%;
+  text-align: center;
+}
+
+@media only screen and (max-width: 700px) {
+  :root {
+    font-size: 14px;
+  }
+
+  main {
+    margin: 1rem;
+  }
+
+  section {
+    margin-left: .5rem;
+    margin-right: .5rem;
+    padding: 2rem;
+    padding-bottom: 0rem;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  input[type="email"], input[type="submit"] {
+    max-width: 100%;
+  }
+
+  input[type="submit"] {
+    height: 50px;
+    padding: .5rem;
+  }
+}
