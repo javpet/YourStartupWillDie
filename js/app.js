@@ -1,18 +1,27 @@
 $(document).ready(function() {
-  var $form = $('form');
+  var form = $('form');
+  // var email = $(`form input[type="email"]`)
+  //
+  // $(email).on("input", function() {
+  //   if (email.validity.typeMismatch) {
+  //     email.setCustomValidity("I expect an e-mail, darling!");
+  //   } else {
+  //     email.setCustomValidity("");
+  //   }
+  // })
 
   $('form input[type="submit"]').on('click', function(event) {
     event.preventDefault();
-    register($form);
+    register(form);
   })
 })
 
-function register($form) {
+function register(form) {
   $.ajax({
-    type: $form.attr('method'),
-    url: $form.attr('action'),
+    type: form.attr('method'),
+    url: form.attr('action'),
     type: 'get',
-    data: $form.serialize(),
+    data: form.serialize(),
     cache: false,
     dataType: 'jsonp',
     contentType: "application/json; charset=utf-8",
