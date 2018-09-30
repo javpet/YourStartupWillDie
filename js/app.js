@@ -1,11 +1,11 @@
 $(document).ready(function() {
-  var $form = $('form');
+var $form = $('form');
 
-  $('form input[type="submit"]').on('click', function(event) {
-      event.preventDefault();
-      register($form);
-    }
-  });
+$('form input[type="submit"]').on('click', function(event) {
+  event.preventDefault();
+  register($form);
+})
+});
 });
 
 function register($form) {
