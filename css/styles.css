@@ -14,7 +14,7 @@ body {
 main {
   margin: 0 auto;
   width: 100vw;
-  max-width: 900px;
+  max-width: 800px;
   height: 100%;
   margin: 3rem;
 }
@@ -41,7 +41,8 @@ p, span {
   line-height: 1.45;
 }
 
-a {
+a, a:visited, a:active {
+  -webkit-appearance: none;
   color: rgb(249, 249, 249, .5);
   text-decoration: none;
   text-decoration-color: #f9f9f9;
@@ -58,6 +59,11 @@ section {
   border-image: url("../img/skull_yourstartup.svg");
   border-image-width: 1.5rem;
   border-image-repeat: round;
+}
+
+footer {
+  font-size: 12px;
+  line-height: 1.45;
 }
 
 form {
