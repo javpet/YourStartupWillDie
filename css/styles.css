@@ -138,7 +138,7 @@ input[type="submit"] {
     margin: 1rem;
   }
 
-  section {
+  section, footer {
     margin-left: .5rem;
     margin-right: .5rem;
     padding: 2rem;
@@ -156,5 +156,6 @@ input[type="submit"] {
   input[type="submit"] {
     height: 50px;
     padding: .5rem;
+    max-width: 100%;
   }
 }
